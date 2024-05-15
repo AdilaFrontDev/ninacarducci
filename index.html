@@ -2,20 +2,21 @@
 <html lang="fr">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="robots" content="index, follow">
 	<title>Nina Carducci votre photographe professionnelle</title>
-	<meta name="description" content="Photographe professionnel, Nina Carducci saura immportaliser vos plus beaux moments pour des concerts, mariages ou en entreprises ! Obtenez des photos de qualité à partager autour de vous grâce aux albums photos ou aux portraits.">
+	<meta name="description" content="Photographe professionnelle, Nina Carducci saura immportaliser vos plus beaux moments pour des concerts, mariages ou en entreprises ! Obtenez des photos de qualité à partager autour de vous grâce aux albums photos ou aux portraits.">
 	<link rel="alternate"  hreflang="fr-fr" href="https://adilafrontdev.github.io/ninacarducci/" />
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
-	<meta charset="UTF-8">
-	<meta name="robots" content="index, follow">
-	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.js"></script>
-	<script src="./assets/scripts.js"></script>
+	<!-- balises Open Graph -->
+	<meta property="og:url"                content="https://adilafrontdev.github.io/ninacarducci/" />
+	<meta property="og:type"               content="website" />
+	<meta property="og:title"              content="Nina Carducci votre photographe professionnelle" />
+	<meta property="og:description"        content="Photographe professionnelle, Nina Carducci saura immportaliser vos plus beaux moments pour des concerts, mariages ou en entreprises ! Obtenez des photos de qualité à partager autour de vous grâce aux albums photos ou aux portraits." />	
 </head>
 <body>
 	<header>
@@ -27,7 +28,7 @@
 					<li><a href="#gallery">Galerie</a></li>
 					<li><a href="#services">Service</a></li>
 					<li><a href="#contact">Contact</a></li>
-					<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="Logo instagram"></a></li>
+					<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.webp" alt="Logo instagram"></a></li>
 				</ul>
 			</nav>
 		</div>
@@ -40,13 +41,13 @@
 				</div>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg" class="d-block w-100" alt="Photo du carousel, réalisée par la phtographe professionnelle Nina Carducci, représentant un homme d'affaire de dos traversant un passage pieton">
+						<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100" alt="Photo du carousel, réalisée par la phtographe professionnelle Nina Carducci, représentant un homme d'affaire de dos traversant un passage pieton">
 					</div>
 					<div class="carousel-item">
-						<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg" class="d-block w-100" alt="Photo du carousel, réalisée par la phtographe professionnelle Nina Carducci, représentant de près le public enthousiaste ">
+						<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100" alt="Photo du carousel, réalisée par la phtographe professionnelle Nina Carducci, représentant de près le public enthousiaste ">
 					</div>
 					<div class="carousel-item">
-						<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.jpg" class="d-block w-100" alt="Photo du carousel, réalisée par la phtographe professionnelle Nina Carducci, représentant un couple lors de leur mariage entouré de leurs invités">
+						<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" class="d-block w-100" alt="Photo du carousel, réalisée par la phtographe professionnelle Nina Carducci, représentant un couple lors de leur mariage entouré de leurs invités">
 					</div>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -63,7 +64,7 @@
 	<main>
 		<section id="about">
 			<div class="picture left">
-				<img src="./assets/images/nina.png" alt="Photo protrait de Nina Carducci">
+				<img src="./assets/images/nina.webp" alt="Photo protrait de Nina Carducci">
 			</div>
 			<div id="about-me">
 				<h2 class="about-me__title">A propos de moi</h2>
@@ -76,15 +77,15 @@
 			<h2 class="title">Portfolio</h2>
 			<div class="container py-3">
 				<div class="gallery" style="display: none">
-					<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.jpg" alt="Photo de concert montrant les artistes sur scène vus du public"/>
-					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.jpg" alt="Photo en entreprise d'un homme en constum debout croisant les bras "/>
-					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.jpg" alt="Photo en entreprise d'un moment d'échange en bureau"/>
-					<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.jpg" alt="Photo de mariage représentant les mains des futurs époux se rejoignant"/>
-					<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.jpg"alt="Portrait capturant les émmosions d'un homme ayant les yeux fermés"/>
-					<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg" alt="Photo de mariage d'un couple avec un palmier en arrière plan"/>
-					<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.jpg" alt="Photrait d'une jeune femme le ragard lointain derrière un grillage"/>
-					<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.jpg" alt="Photo de concert  d'un artist sur scène"/>
-					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg" alt="Photo en entreprise d'une jeune femme souriante derrière son ordinateur portable"/>
+					<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="Photo de concert montrant les artistes sur scène vus du public"/>
+					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="Photo en entreprise d'un homme en constum debout croisant les bras "/>
+					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" alt="Photo en entreprise d'un moment d'échange en bureau"/>
+					<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" alt="Photo de mariage représentant les mains des futurs époux se rejoignant"/>
+					<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"alt="Portrait capturant les émmosions d'un homme ayant les yeux fermés"/>
+					<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="Photo de mariage d'un couple avec un palmier en arrière plan"/>
+					<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" alt="Photrait d'une jeune femme le ragard lointain derrière un grillage"/>
+					<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" alt="Photo de concert  d'un artist sur scène"/>
+					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="Photo en entreprise d'une jeune femme souriante derrière son ordinateur portable"/>
 				</div>
 			</div>
 		</section>
@@ -155,10 +156,15 @@
 					</form>
 				</div>
 				<div class="picture right">
-					<img src="./assets/images/camera.png" alt="Photo d'un appreil photo">
+					<img src="./assets/images/camera.webp" alt="Photo d'un appreil photo">
 				</div>
 			</div>
 		</section>
 	</main>
+	<!-- scripts JS -->
+	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="./assets/maugallery.js"></script>
+	<script src="./assets/scripts.js"></script>
 </body>
 </html>
