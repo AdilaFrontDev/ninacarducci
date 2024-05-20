@@ -30,7 +30,7 @@
 	<header>
 		<div class="top-header">
 			<h1 class="name">Nina Carducci</h1>
-			<nav class="nav">   
+			<nav>   
 				<ul>
 					<li><a href="#about">À propos</a></li>
 					<li><a href="#gallery">Galerie</a></li>
@@ -74,8 +74,8 @@
 			<div class="picture left">
 				<img src="./assets/images/nina.webp" alt="Photo protrait de Nina Carducci">
 			</div>
-			<div id="about-me">
-				<h2 class="about-me__title">A propos de moi</h2>
+			<div id="about-me" class="about-me">
+				<h2 class="title about-me__title">A propos de moi</h2>
 				<p class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
 				<p class="about-me__text">Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 					C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
@@ -108,34 +108,34 @@
 		<section id="services">
 			<h2 class="title">Mes services</h2>
 			<div class="container">
-				<article class="service">
+				<article itemscope itemtype="https://schema.org/Offer" class="service">
 					<div class="service__description">
-						<h3>Shooting photo</h3>
-						<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
+						<h3 itemprop="category">Shooting photo</h3>
+						<p itemprop="additionalProperty">Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
 					</div>
 					<div class="service__price">
-						<h4>350€/demi journée</h4>
-						<span>Matériel, déplacement inclus</span>
+						<p itemprop="price">350€/demi journée</p>
+						<span itemprop="addOn">Matériel, déplacement inclus</span>
 					</div>
 				</article>
-				<article class="service">
+				<article itemscope itemtype="https://schema.org/Offer" class="service">
 					<div class="service__description">
-						<h3>Retouches</h3>
-						<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
+						<h3 itemprop="category">Retouches</h3>
+						<p itemprop="additionalProperty">Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
 					</div>
 					<div class="service__price">
-						<h4>50€/photo</h4>
-						<span>2 AR par photo</span>
+						<p itemprop="price">50€/photo</p>
+						<span itemprop="addOn">2 AR par photo</span>
 					</div>
 				</article>
-				<article class="service">
+				<article itemscope itemtype="https://schema.org/Offer" class="service">
 					<div class="service__description">
-						<h3>Album photos</h3>
-						<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
+						<h3 itemprop="category">Album photos</h3>
+						<p itemprop="additionalProperty">Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
 					</div>
 					<div class="service__price">
-						<h4>400€ album A4</h4>
-						<span>30 pages recto/verso</span>
+						<p itemprop="price">400€ album A4</p>
+						<span itemprop="addOn">30 pages recto/verso</span>
 					</div>
 				</article>
 			</div>
@@ -151,7 +151,7 @@
 		<section id="contact">
 			<div class="container">
 				<div class="form-container">
-					<h3>Une question ? Une demande de devis ?</h3>
+					<h2>Une question ? Une demande de devis ?</h2>
 					<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 					<form action="" method="post">
 						<label for="nom">Nom</label>
@@ -170,13 +170,26 @@
 		</section>
 	</main>
 	<footer>
-		<div class="horaires">
-
+		<h2 class="title">Me contacter</h2>
+		<div itemscope  itemtype="https://schema.org/Organization">
+			<div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress" class="coordonnees">
+				<p>Adresse :
+					<span itemprop="streetAddress">Avenue Alsace-Lorraine</span> 
+					<span itemprop="postalCode">33200</span>
+					<span itemprop="addressLocality">Bordeaux, France</span> 
+				</p> 
+			</div>
+			<p>Numéro de téléphone : 
+				<span itemprop="telephone">05 56 67 78 89</span>
+			</p>
+			
+			<div itemscope itemtype="https://schema.org/LocalBusiness" class="horaires">
+				<p>Horaire : 
+					<span itemprop="openingHours">Lundi au Vendredi de 10h à 19h</span> 
+				</p>
+			</div>
 		</div>
-		<div class="coordonnees">
-
-		</div>
+		
 	</footer>
-	
 </body>
 </html>
