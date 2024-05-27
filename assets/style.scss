@@ -267,7 +267,7 @@ body {
 		font-family: Spectral;
 		font-style: italic;
 		font-weight: 300;
-		font-size: 38.305px;
+		font-size: calc(1.375rem + 1.5vw);
 	}
 	&__author {
 		font-family: Spectral;
