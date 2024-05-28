@@ -199,12 +199,18 @@ body {
 		@media all and (max-width: 1180px){
 			width: 100%;
 		}
+		@media all and (max-width: 650px){
+			font-size: 16px;
+		}
 	}
 	&__text {
 		width: 70%;
 		font-size: 18px;
 		@media all and (max-width: 1180px){
 			width: 100%;
+		}
+		@media all and (max-width: 650px){
+			font-size: 14px;
 		}
 	}
 }
