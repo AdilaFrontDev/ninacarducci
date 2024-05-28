@@ -146,7 +146,6 @@ body {
 			height: 150px;
 		}
 	}
-	
 }
 
 // a propos de moi 
@@ -171,7 +170,6 @@ body {
 			width: 100%;
 		}
 	}
-
 }
 
 .about-me {
@@ -314,17 +312,24 @@ body {
 		}
 	}
 }
-
+article {
+	background-color: red;
+	z-index: 5;
+}
 .service {
 	background-color: white;
 	max-width: 390px;
 	width: 30%;
 	height: 337px;
 	padding: 1em;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 	z-index: 1;
+	&__container{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
 	@media all and (max-width: 1000px){
 		width: 100%;
 		max-width: 100%;
