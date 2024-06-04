@@ -6,7 +6,7 @@
 	<!-- balises meta pour le SEO -->
 	<meta name="robots" content="index, follow">
 	<title>Nina Carducci votre photographe professionnelle</title>
-	<meta name="description" content="Photographe professionnelle, Nina Carducci saura immportaliser vos plus beaux moments pour des concerts, mariages ou en entreprises ! Obtenez des photos de qualité à partager autour de vous grâce aux albums photos ou aux portraits.">
+	<meta name="description" content="Photographe professionnelle, Nina Carducci saura immortaliser vos plus beaux moments ! Obtenez des photos de qualité à partager autour de vous.">
 	<link rel="alternate"  hreflang="fr-fr" href="https://adilafrontdev.github.io/ninacarducci/" />
 	<!-- liens feuilles de style -->
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
@@ -25,6 +25,36 @@
 	<meta property="og:type"               content="website" />
 	<meta property="og:title"              content="Nina Carducci votre photographe professionnelle" />
 	<meta property="og:description"        content="Photographe professionnelle, Nina Carducci saura immportaliser vos plus beaux moments pour des concerts, mariages ou en entreprises ! Obtenez des photos de qualité à partager autour de vous grâce aux albums photos ou aux portraits." />	
+	<!-- schema.org -->
+	<script type="application/ld+json">
+		{
+			"telephone": "(+33) 05 56 67 78 89",
+			"name": "Nina Carducci",
+			"openingHoursSpecification": {
+				"opens": "10:00",
+				"closes": "19:00",
+				"dayOfWeek": [
+					"Monday",
+					"Tuesday",
+					"Wednesday",
+					"Thursday",
+					"Friday",
+				],
+				"@context": "http://schema.org",
+				"@type": "OpeningHoursSpecification"
+			},
+			"address": {
+				"addressCountry": "France",
+				"postalCode": "33200",
+				"streetAddress": "68 Avenue Alsace-Lorraine",
+				"addressLocality": "Bordeaux",
+				"@context": "http://schema.org",
+				"@type": "PostalAddress"
+			},
+			"@context": "http://schema.org",
+			"@type": "LocalBusiness"
+		}
+	</script>
 </head>
 <body>
 	<header>
@@ -112,41 +142,38 @@
 			<h2 class="title">Mes services</h2>
 			<div class="container">
 				<article class="service">
-					<div class="service__container" itemscope itemtype="https://schema.org/Product">				
+					<div class="service__container">				
 						<div class="service__description">
-							<h3 itemprop="name">Shooting photo</h3>
-							<span itemprop="description">Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</span>
+							<h3>Shooting photo</h3>
+							<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
 						</div>
-						<div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="service__price">
-							<meta itemprop="priceCurrency" content="EUR"/>
-							<p class="service__price-amount"><span itemprop="price">350</span>€ par demi-journée</p>
-							<p class="service__price-addOn"><span itemprop="addOn">Matériel et déplacement inclus</span></p>
+						<div class="service__price">
+							<p class="service__price-amount">350€ par demi-journée</p>
+							<p class="service__price-addOn">Matériel et déplacement inclus</p>
 						</div>
 					</div>
 				</article>
 				<article class="service">
 					<div class="service__container" itemscope itemtype="https://schema.org/Product">
 						<div class="service__description">
-							<h3 itemprop="name">Retouches</h3>
-							<span itemprop="description">Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</span>
+							<h3>Retouches</h3>
+							<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
 						</div>
 						<div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="service__price">
-							<meta itemprop="priceCurrency" content="EUR"/>
-							<p class="service__price-amount"><span itemprop="price">50</span>€ par photo</p>
-							<p class="service__price-addOn"><span itemprop="addOn">2 Aller-retours par photo</span></p>
+							<p class="service__price-amount">50€ par photo</p>
+							<p class="service__price-addOn">2 Aller-retours par photo</p>
 						</div>
 					</div>
 				</article>
 				<article class="service">
-					<div class="service__container" itemscope itemtype="https://schema.org/Product">
+					<div class="service__container">
 						<div class="service__description">
-							<h3 itemprop="name">Album photos</h3>
-							<span itemprop="description">Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</span>
+							<h3>Album photos</h3>
+							<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
 						</div>
-						<div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="service__price">
-							<meta itemprop="priceCurrency" content="EUR"/>
-							<p class="service__price-amount"><span itemprop="price">400</span>€ pour un album A4</p>
-							<p class="service__price-addOn"><span itemprop="addOn">30 pages recto-verso</span></p>
+						<div class="service__price">
+							<p class="service__price-amount">400€ pour un album A4</p>
+							<p class="service__price-addOn">30 pages recto-verso</p>
 						</div>
 					</div>
 				</article>
@@ -184,24 +211,10 @@
 	<footer class="footer">
 		<div class=" footer__contact container">
 			<h2 class="title">Besoin de me contacter ?</h2>
-			<div itemscope  itemtype="https://schema.org/ContactPoint">
-				<div itemscope itemtype="https://schema.org/LocalBusiness" class="openingHours">
-					<p><span itemprop="name">Nina Carducci</span></p>
-					<div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress" class="address">
-						<p>Adresse :
-							<span itemprop="streetAddress">68 Avenue Alsace-Lorraine</span> 
-							<span itemprop="postalCode">33200</span>
-							<span itemprop="addressLocality">Bordeaux, France</span> 
-						</p> 
-					</div>
-					<p>Horaire : 
-						<span itemprop="hoursAvailable">Lundi au Vendredi de 10h à 19h</span> 
-					</p>
-				</div>
-				<p>Numéro de téléphone : 
-					<span itemprop="telephone"> (+33) 05 56 67 78 89</span>
-				</p>
-			</div>
+				<p>Nina Carducci</p>			
+				<p>Adresse : 68 Avenue Alsace-Lorraine 33200 Bordeaux, France</p> 
+				<p>Horaire : Lundi au Vendredi de 10h à 19h</p>
+				<p>Numéro de téléphone : (+33) 05 56 67 78 89</p>
 		</div>
 	</footer>
 </body>
